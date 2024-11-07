@@ -1,0 +1,78 @@
+# Ignore meta files
+*.meta
+
+# Ignore auto-generated Unity folders
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+
+# Exclude specific files related to Lightmaps and Shaders Cache
+LightmapsSnapshot
+ShaderCache/
+
+# Ignore OS-specific files
+# Windows
+[Dd]esktop.ini
+[Tt]humbs.db
+[Dd]S_Store
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+__MACOSX/
+._*
+
+# Ignore VS and MonoDevelop project files
+.vscode/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.opendb
+*.VC.db
+
+# Ignore crash reports
+sysinfo.txt
+
+# Ignore built application files
+*.apk
+*.aab
+*.unitypackage
+
+# Ignore temporary backup files
+*.bak
+*.old
+*.tmp
+*.swp
+*.swo
+*~
+
+# Ignore player log files
+Player.log
+Player-prev.log
+
+# Ignore build logs
+*.log
+
+# Ignore Addressable Asset settings
+Assets/AddressableAssetsData/
+
+# Ignore specific AMD DX9 Cache (if on Windows with AMD GPU)
+AppData/Local/AMD/DX9Cache/
+
+# Optional: ignore any custom builds or archives
+*.zip
+*.rar
+*.7z
