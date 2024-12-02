@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+// Car spawn points, they spawn cars at 'randomish' intervals. they also can kill the players
 public class CarSpawnStop : MonoBehaviour
 {
     [System.Serializable]
@@ -14,8 +14,8 @@ public class CarSpawnStop : MonoBehaviour
     public SpawnPoint[] spawnPoints; // Array of spawn points
     public GameObject carPrefab; // The car prefab to spawn
     public float moveSpeed = 5f; // Speed of the car
-    public float minSpawnInterval = 2f; // Minimum interval between spawns
-    public float maxSpawnInterval = 5f; // Maximum interval between spawns
+    public float minSpawnInterval = 1f; // Minimum interval between spawns
+    public float maxSpawnInterval = 3f; // Maximum interval between spawns
 
     void Start()
     {

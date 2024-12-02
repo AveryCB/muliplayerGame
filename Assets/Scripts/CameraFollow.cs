@@ -1,5 +1,6 @@
 using UnityEngine;
-
+// Camera movement
+// Wanted to comment on how fricken nicely done this is btw ~ kenzie
 public class CameraFollow : MonoBehaviour
 {
     public Transform player1; // Reference to the first player

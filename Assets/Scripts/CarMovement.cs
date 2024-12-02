@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class CarMovement : MonoBehaviour
@@ -13,10 +14,12 @@ public class CarMovement : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player1") || other.gameObject.CompareTag("Player2"))
         {
             // Player is touched by the car, they die
             Destroy(other.gameObject);
+            // Call GameManager to handle player death
+            GameManager.instance.HandlePlayerDeath();
         }
     }
 }

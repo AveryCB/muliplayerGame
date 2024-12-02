@@ -19,7 +19,7 @@ public class coins : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player1") || other.gameObject.CompareTag("Player2"))
         {
             // Coin is collected
             this.gameObject.SetActive(false);
@@ -35,6 +35,8 @@ public class coins : MonoBehaviour
             {
                 // Update win text
                 winText.text = "You win!";
+                // Call GameManager to handle player win
+                GameManager.instance.HandlePlayerWin();
             }
         }
     }

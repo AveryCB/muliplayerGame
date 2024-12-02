@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+// This pauses the game using esc
 public class Pause : MonoBehaviour
 {
     [Header("UI Elements")]

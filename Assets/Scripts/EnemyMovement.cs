@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+// General AI movement for enemies that one shot both players
 public class EnemyMovement : MonoBehaviour
 {
     public float moveSpeed = 3f;
@@ -59,6 +59,17 @@ public class EnemyMovement : MonoBehaviour
         }
 
         return nearestTarget;
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player1") || other.gameObject.CompareTag("Player2"))
+        {
+            // Player is touched by the enemy, they die
+            Destroy(other.gameObject);
+            // Call GameManager to handle player death
+            GameManager.instance.HandlePlayerDeath();
+        }
     }
 
     // Optional: Reverse direction if hitting a wall or obstacle

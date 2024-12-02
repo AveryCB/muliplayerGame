@@ -1,8 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-
+// Handles player death parameters
 public class PlayerDeath : MonoBehaviour
 {
     public string enemyTag = "Enemy"; // Tag for enemy or dangerous objects
@@ -27,10 +26,10 @@ public class PlayerDeath : MonoBehaviour
         }
     }
 
-    // Handle the player's death and restart the scene
+    // Handle the player's death
     void Die()
     {
-        // Reload the current scene
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        // Call GameManager to handle player death
+        GameManager.instance.HandlePlayerDeath();
     }
 }

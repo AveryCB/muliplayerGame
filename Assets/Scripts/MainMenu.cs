@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-
+// This is the main menu lol
 public class MainMenu : MonoBehaviour
 {
     [Header("UI Elements")]
@@ -18,10 +18,10 @@ public class MainMenu : MonoBehaviour
             quitButton.onClick.AddListener(QuitGame);
     }
 
-    // Method to load the Tutorial scene
+    // Method to load the scene
     public void NewGame()
     {
-        SceneManager.LoadScene("SampleScene");  // Make sure the scene is named exactly "Tutorial"
+        SceneManager.LoadScene("SampleScene");  
     }
 
     // Method to quit the game

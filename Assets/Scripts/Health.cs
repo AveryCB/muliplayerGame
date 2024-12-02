@@ -1,6 +1,13 @@
-using System.Collections; using System.Collections.Generic; using UnityEngine; using UnityEngine.UI;
+using System.Collections; 
+using System.Collections.Generic; 
+using UnityEngine; 
+using UnityEngine.UI;
 
-public class Health : MonoBehaviour { public int maxHealth = 100; private int currentHealth; public Text healthText; // Reference to the UI Text component
+public class Health : MonoBehaviour 
+{ 
+    public int maxHealth = 100; 
+    private int currentHealth; 
+    public Text healthText; // Reference to the UI Text component
 
 // Start is called before the first frame update
 void Start()
